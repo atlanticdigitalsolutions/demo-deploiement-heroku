@@ -36,7 +36,8 @@ public class EmployeeController {
 
     @GetMapping("/{id}")
     public ResponseEntity<Employee> findById(@PathVariable long id){
-        return ResponseEntity.ok(employeeRepository.findById(id).orElseThrow(null));
+        return ResponseEntity.ok(employeeRepository.findById(id)
+                .orElseThrow(() -> new RessourceNotFound("Lemployee avec cet identifiant n'existe pas !!!")));
     }
 
 }
