@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://demo-heroku-angular-deploiment-562213cc0f9d.herokuapp.com/")
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("employee")
