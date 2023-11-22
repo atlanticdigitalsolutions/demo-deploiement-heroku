@@ -26,4 +26,13 @@ public class Employee {
     private String telephone;
     private String adresse;
 
+
+    public Employee(String matricule, String prenom, String nom, String email, String telephone, String adresse) {
+        this.matricule = matricule;
+        this.prenom = prenom;
+        this.nom = nom;
+        this.email = email;
+        this.telephone = telephone;
+        this.adresse = adresse;
+    }
 }
