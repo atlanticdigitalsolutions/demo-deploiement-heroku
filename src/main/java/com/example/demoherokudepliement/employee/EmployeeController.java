@@ -35,8 +35,8 @@ public class EmployeeController {
     // Employee by id
 
     @GetMapping("/{id}")
-    public ResponseEntity<String> findById(@PathVariable long id){
-        return ResponseEntity.ok("Le test semble etre reussit avec heroku");
+    public ResponseEntity<Employee> findById(@PathVariable long id){
+        return ResponseEntity.ok(employeeRepository.findById(id).orElseThrow(null));
     }
 
 }
